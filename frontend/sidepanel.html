@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meeting Lint</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <div class="header">
+    <span class="logo">Meeting Lint</span>
+    <span class="status-dot" id="statusDot"></span>
+    <span class="status-text" id="statusText">Disconnected</span>
+  </div>
+
+  <div class="controls">
+    <button id="recordBtn" class="btn-record" disabled>
+      Start Recording
+    </button>
+    <span class="ws-hint" id="wsHint"></span>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Live Transcript</div>
+    <div class="transcript-box" id="transcriptBox">
+      <span class="placeholder">Transcript will appear here...</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Flags</div>
+    <div class="flags-box" id="flagsBox">
+      <span class="placeholder">No flags yet.</span>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
